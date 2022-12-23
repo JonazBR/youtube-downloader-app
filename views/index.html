@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/static/main_old.css">
+    <title>youtube search</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <div class="container">
+            <a class="navbar-brand" href="/">Youtube Search</a> 
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row my-4">
+            <div class="col">
+                <form id="searchForm">
+                    <div class="input-group input-group-lg my-3">
+                        <input f  type="text" class="form-control" id="searchField" placeholder="search">
+                        <div class="input-group-append">
+                            <button onclick="document.body.style.cursor='wait'" type="submit" class="btn btn-danger">Search</button>
+                       
+                        </div>
+                   
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div src="" id="player"></div>
+            </div>
+            <div class="col-12">
+                <ul class="list-unstyled" id="videoList">
+     
+            
+                    <!--
+                                <li class="list-group-item" id="nWVKbjyUe6c"><div class="media mb-3">
+                        <img class="align-self-center mr-2 d-none d-lg-block" src="https://i.ytimg.com/vi/nWVKbjyUe6c/hq720.jpg" alt="">
+                        <img class="align-self-center mr-2 d-block d-lg-none" src="https://i.ytimg.com/vi/nWVKbjyUe6c/hq720.jpg" alt="">
+                        <div class="media-body">
+                            <h6 class="mt-0">Phonk Music 2022 ※ Aggressive Drift Phonk ※ Фонк</h6>
+                            <span>46:39</span>
+                        </div><div>
+                    </div></div></li>
+                    <li style="background-color: rgb(104,36,35);" class="list-group-item" id="nWVKbjyUe6c"><div class="media mb-3">
+                        <img class="align-self-center mr-2 d-none d-lg-block" src="https://i.ytimg.com/vi/nWVKbjyUe6c/hq720.jpg" alt="">
+                        <img class="align-self-center mr-2 d-block d-lg-none" src="https://i.ytimg.com/vi/nWVKbjyUe6c/hq720.jpg" alt="">
+                        <div class="media-body">
+                            <h6 class="mt-0">Phonk Music 2022 ※ Aggressive Drift Phonk ※ Фонк</h6>
+                            <span>46:39</span>
+                        </div><div>
+                    </div></div></li>
+
+     <div class="autocomplete-suggestions" style="position: absolute; width: 482px; max-height: 210px; z-index: 9999; top: 471px; left: 16px;">
+                            <div class="autocomplete-suggestion" data-index="0"><strong>p</strong>honk</div>
+                            <div class="autocomplete-suggestion" data-index="1"><strong>p</strong>cn boladao</div>
+                            <div class="autocomplete-suggestion" data-index="2"><strong>p</strong>honk music</div>
+                            <div class="autocomplete-suggestion" data-index="3"><strong>p</strong>s2</div>
+                            <div class="autocomplete-suggestion" data-index="4"><strong>p</strong>honkmetamor<strong>p</strong>hosis</div>
+                            <div class="autocomplete-suggestion" data-index="5"><strong>p</strong>oh
+                                <strong>p</strong>ah</div>
+                            <div class="autocomplete-suggestion" data-index="6"><strong>p</strong>olemicas</div>
+                            <div class="autocomplete-suggestion" data-index="7"><strong>p</strong>layground</div>
+                            <div class="autocomplete-suggestion" data-index="8">
+                                <strong>p</strong>e<strong>p</strong><strong>p</strong>a <strong>p</strong>ig</div>
+                            <div class="autocomplete-suggestion" data-index="9"><strong>p</strong>ink venom</div>
+                            <div class="autocomplete-suggestion" data-index="10"><strong>p</strong>ost malone</div>
+                            <div class="autocomplete-suggestion" data-index="11"><strong>p</strong>sg</div>
+                            <div class="autocomplete-suggestion" data-index="12"><strong>p</strong>odcast</div>
+                            <div class="autocomplete-suggestion" data-index="13"><strong>p</strong>roject
+                                <strong>p</strong>laytime</div>
+                        </div>
+
+                 
+                    <iframe width="30%" height="30%" src="https://www.youtube.com/embed/vXL7y6km0a8"></iframe>
+                    <li class="list-group-item" id="${a.id.videoId}"><div class="media mb-3" >
+                        <img style="width: 30%; height: 30%;" class="align-self-center mr-2 d-none d-lg-block" src="https://criticalhits.com.br/wp-content/uploads/2021/09/de4884z-839aa545-deaa-464b-9c1a-a82b377181aa.png" alt="">
+                        <div class="media-body" >
+                            <h6 class="mt-0">video kkkk</h6>
+                            <span>datakk</span>
+                            <div class="description">descriçãokkk</div>
+                        </div><div>
+                    </li>
+                    <li class="list-group-item" id="${a.id.videoId}"><div class="media mb-3" >
+                        <img style="width: 30%; height: 30%;" class="align-self-center mr-2 d-none d-lg-block" src="https://criticalhits.com.br/wp-content/uploads/2021/09/de4884z-839aa545-deaa-464b-9c1a-a82b377181aa.png" alt="">
+                        <div class="media-body" >
+                            <h6 class="mt-0">video kkkk</h6>
+                            <span>datakk</span>
+                            <div class="description">descriçãokkk</div>
+                        </div><div>
+                    </li>
+                </ul>
+               -->
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js" integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/static/main.js"></script>
+    <script src="/static/theme.js"></script>
+</body>
+
+</html>
